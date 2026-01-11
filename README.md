@@ -20,4 +20,4 @@ After this, I then switched to Claude Opus 4.5, and asked :
     https://huggingface.co/Qwen/Qwen2.5-7B-Instruct, and this time go into    
     deeper details about persona vectors creating visuals with matplotlib. 
 
-And, yeah, it created persona_vectors_2.ipynb.
+And, yeah, it created persona_vectors_2.ipynb. First time I ran it, there was an error in cell 12. I asked Claude to fix it and the fix worked! It now all runs in one clean pass. Nice!
