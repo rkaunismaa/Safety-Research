@@ -33,3 +33,10 @@ Today I asked claude (using claude-opus-4-5-20251101):
 
 
 It generated persona_vectors_3.ipynb. 
+
+I then asked:
+
+    Create persona_vectors_4.ipynb from persona_vectors_3.ipynb by adding detailed comments to the code that explain what the next    
+    step is doing. 
+
+It generated persona_vectors_4.ipynb.
