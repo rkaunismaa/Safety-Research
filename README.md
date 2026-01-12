@@ -21,3 +21,15 @@ After this, I then switched to Claude Opus 4.5, and asked :
     deeper details about persona vectors creating visuals with matplotlib. 
 
 And, yeah, it created persona_vectors_2.ipynb. First time I ran it, there was an error in cell 12. I asked Claude to fix it and the fix worked! It now all runs in one clean pass. Nice!
+
+
+## Monday, January 12, 2026
+
+Today I asked claude:
+
+    Verify that the code in the notebook persona_vectors_2.ipynb accurately portrays and reflects the code in the persona_vectors     
+    repository. The generated code in persona_vectors_2.ipynb MUST behave exactly the same as the code in this repository. If any     
+    differences are found, then generate a new notebook called persona_vectors_3.ipynb that resolves these differences. 
+
+
+It generated persona_vectors_3.ipynb. 
