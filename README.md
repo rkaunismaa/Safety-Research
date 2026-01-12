@@ -25,7 +25,7 @@ And, yeah, it created persona_vectors_2.ipynb. First time I ran it, there was an
 
 ## Monday, January 12, 2026
 
-Today I asked claude:
+Today I asked claude (using claude-opus-4-5-20251101):
 
     Verify that the code in the notebook persona_vectors_2.ipynb accurately portrays and reflects the code in the persona_vectors     
     repository. The generated code in persona_vectors_2.ipynb MUST behave exactly the same as the code in this repository. If any     
