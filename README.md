@@ -40,3 +40,9 @@ I then asked:
     step is doing. 
 
 It generated persona_vectors_4.ipynb.
+
+## Tuesday, January 13, 2026
+
+Today I am going to shift my focus to [Introducing Bloom: an open source tool for automated behavioral evaluations](https://www.anthropic.com/research/bloom), which is another, newer repository developed by Safety Research, found [here](https://github.com/safety-research/bloom/). 
+
+I will start with creating a new python environment for bloom. And I think I will start by creating a new subdirectory for all thinks Bloom, to keep things separate from the work on Persona Vectors. Hmm come to think of it, I think it would also be best if I moved EVERYTHING in this current directory (the directories persona_vectors, .claude, .git, .personavectors, and all the current root files EXCEPT this README.md file) into a PersonaVectors subdirectory. Gotta wonder if that is gonna break anything, but we shall see ... 
