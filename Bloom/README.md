@@ -27,3 +27,5 @@ It asked:
     3. Fetch the page in sections if it has anchors
 
 I went with 1, which it parsed into bloom-alignment-blog.txt, and then updated bloom_intro.ipynb to the current version. Amazing!!
+
+Wow. I asked Gemini 3 Pro the same thing, providing the same resources, and it produced bloom_intro_gemini.ipynb. Damn, does Gemini ever suck!
