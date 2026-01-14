@@ -50,3 +50,20 @@ I will start with creating a new python environment for bloom. And I think I wil
 Hmm whelp tried that, and yeah, stuff got messed up ... tried running persona_vectors_4.ipynb using .personavectors but it failed ... meh ... gonna roll back to the initial state. 
 
 OK, so I will keep the Persona Vectors stuff where it currently resides, create a new sub-folder for the Bloom resources that I create, clone the [bloom repo](https://github.com/safety-research/bloom) into this sub-folder, exlude this repo from this repo, create a .bloom python environment, and yeah, continue with this investigation into stuff from [Safety Research](https://github.com/safety-research), and launch Claude CLI from this Bloom sub-folder.
+
+
+## Wednesday, January 14, 2026
+
+Gonna take a look at [circuit-tracer](https://github.com/safety-research/circuit-tracer.git). 
+
+From a new terminal window inside ~/PythonEnvironments/Safety-Research :
+
+1. uv venv .circuit-tracer
+2. source .circuit-tracer
+3. mkdir CircuitTracer
+4. cd CircuitTracer
+5. git clone https://github.com/safety-research/circuit-tracer.git
+6. cd circuit-tracer
+7. uv pip install .
+
+Hmm just noticed this new environment already has [TransformerLens](https://github.com/TransformerLensOrg/TransformerLens)

@@ -3,3 +3,6 @@ persona_vectors/
 
 .bloom/
 Bloom/bloom/
+
+.circuit-tracer/
+CircuitTracer/circuit-tracer/
