@@ -65,5 +65,6 @@ From a new terminal window inside ~/PythonEnvironments/Safety-Research :
 5. git clone https://github.com/safety-research/circuit-tracer.git
 6. cd circuit-tracer
 7. uv pip install .
+8. uv pip install -e ".[dev]"
 
 Hmm just noticed this new environment already has [TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) Nice!
