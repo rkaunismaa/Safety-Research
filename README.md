@@ -83,3 +83,11 @@ From a new terminal window inside ~/PythonEnvironments/Safety-Research :
 6. cd petri
 7. uv pip install .
 8. uv pip install -e ".[dev]"
+
+Today, I also asked claude:
+
+    Can you please tell me what would be the easiest way to allow me to be able to talk to you and hear you instead of having to type this in? 
+
+It produced the content found in the /voice_claude folder.
+
+I really want to get this to work so that I can reduce the amount of typing I need to do as I engage claude in my daily workflow.
