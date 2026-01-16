@@ -59,7 +59,7 @@ Gonna take a look at [circuit-tracer](https://github.com/safety-research/circuit
 From a new terminal window inside ~/PythonEnvironments/Safety-Research :
 
 1. uv venv .circuit-tracer
-2. source .circuit-tracer
+2. source .circuit-tracer/bin/activate
 3. mkdir CircuitTracer
 4. cd CircuitTracer
 5. git clone https://github.com/safety-research/circuit-tracer.git
@@ -68,3 +68,18 @@ From a new terminal window inside ~/PythonEnvironments/Safety-Research :
 8. uv pip install -e ".[dev]"
 
 Hmm just noticed this new environment already has [TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) Nice!
+
+## Friday, January 16, 2026
+
+Gonna start taking a look at [Petri: Parallel Exploration Tool for Risky Interactions](https://github.com/safety-research/petri)
+
+From a new terminal window inside ~/PythonEnvironments/Safety-Research :
+
+1. uv venv .petri
+2. source .petri/bin/activate
+3. mkdir Petri
+4. cd Petri
+5. git clone https://github.com/safety-research/petri.git
+6. cd petri
+7. uv pip install .
+8. uv pip install -e ".[dev]"
