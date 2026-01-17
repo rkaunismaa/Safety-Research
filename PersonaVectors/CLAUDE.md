@@ -21,6 +21,10 @@ pip install -r persona_vectors/requirements.txt
 # Configure environment
 cp persona_vectors/.env.example persona_vectors/.env
 # Edit .env to add: OPENAI_API_KEY, HF_TOKEN, WANDB_PROJECT
+
+# Extract training datasets
+cd persona_vectors
+unzip dataset.zip
 ```
 
 ## Core Workflow
@@ -41,7 +45,7 @@ CUDA_VISIBLE_DEVICES=0 python -m eval.eval_persona \
     --output_path eval_persona_extract/Qwen2.5-7B-Instruct/evil_pos_instruct.csv \
     --persona_instruction_type pos \
     --assistant_name evil \
-    --judge_model gpt-4o-mini-2024-07-18 \
+    --judge_model gpt-4.1-mini-2025-04-14 \
     --version extract
 
 CUDA_VISIBLE_DEVICES=0 python -m eval.eval_persona \
@@ -50,9 +54,15 @@ CUDA_VISIBLE_DEVICES=0 python -m eval.eval_persona \
     --output_path eval_persona_extract/Qwen2.5-7B-Instruct/evil_neg_instruct.csv \
     --persona_instruction_type neg \
     --assistant_name helpful \
-    --judge_model gpt-4o-mini-2024-07-18 \
+    --judge_model gpt-4.1-mini-2025-04-14 \
     --version extract
+```
 
+**Assistant Name Guidelines**: The `--assistant_name` parameter prepends "You are a [assistant_name] assistant." before the instruction:
+- **Positive prompts**: Use the trait adjective (e.g., `--assistant_name evil`)
+- **Negative prompts**: Use the antonym when clear, otherwise use `--assistant_name helpful`
+
+```bash
 # Then compute persona vector as difference: positive_activations - negative_activations
 python generate_vec.py \
     --model_name Qwen/Qwen2.5-7B-Instruct \
@@ -94,7 +104,7 @@ CUDA_VISIBLE_DEVICES=0 python -m eval.eval_persona \
     --model path/to/your/model \
     --trait evil \
     --output_path results.csv \
-    --judge_model gpt-4o-mini-2024-07-18 \
+    --judge_model gpt-4.1-mini-2025-04-14 \
     --version eval
 
 # Evaluate with inference-time steering
@@ -102,7 +112,7 @@ CUDA_VISIBLE_DEVICES=0 python -m eval.eval_persona \
     --model Qwen/Qwen2.5-7B-Instruct \
     --trait evil \
     --output_path steering_results.csv \
-    --judge_model gpt-4o-mini-2024-07-18 \
+    --judge_model gpt-4.1-mini-2025-04-14 \
     --version eval \
     --steering_type response \
     --coef 2.0 \
@@ -191,6 +201,7 @@ Configuration example (`train_instruct_7b_steer.json`):
 - **cal_projection.py**: Projection analysis
   - Computes `(activation @ vector) / ||vector||` to measure alignment
   - Three modes: `"proj"`, `"prompt_last_proj"`, `"cos_sim"`
+  - Supports CSV files (must contain `prompt` and `answer` columns) and JSONL files (must contain `messages` field)
 
 ### Data Structure
 
