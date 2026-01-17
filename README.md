@@ -91,3 +91,9 @@ Today, I also asked claude:
 It produced the content found in the /voice_claude folder.
 
 I really want to get this to work so that I can reduce the amount of typing I need to do as I engage claude in my daily workflow.
+
+## Saturday, January 17, 2026
+
+Gonna move the persona vectors stuff from the root of this repo into its own PersonaVectors subdirectory, just to keep stuff consistent. And yes, I am anticipating problems ...
+
+Hmm seems like the notebook 'persona_vectors_4.ipynb' still works! Nice!
