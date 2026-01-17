@@ -97,3 +97,7 @@ I really want to get this to work so that I can reduce the amount of typing I ne
 Gonna move the persona vectors stuff from the root of this repo into its own PersonaVectors subdirectory, just to keep stuff consistent. And yes, I am anticipating problems ...
 
 Hmm seems like the notebook 'persona_vectors_4.ipynb' still works! Nice!
+
+Hmm I asked claude to validate the contents of 'persona_vectors_4.ipynb' against the persona vectors repo and the https://arxiv.org/pdf/2507.21509  arxiv document. It said all was well even though it was not able to parse the arxiv document. So I downloaded the document into 2507.21509v3.pdf and asked it to try again, but then I ran out of tokens! 
+
+So then I asked [Gemini](https://gemini.google.com/app/f9221852d31f1756) the same thing. It worked and it too claimed the 'persona_vectors_4.ipynb' was correct! So then I asked it to rewrite the notebook into 'persona_vectors_5.ipynb' but use 'meta-llama/Llama-3.1-8B-Instruct'. This all worked! Nice!
